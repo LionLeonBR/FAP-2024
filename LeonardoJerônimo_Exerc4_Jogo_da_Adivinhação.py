@@ -18,11 +18,12 @@ while True:
         continue
     else:
         if usuario == pc:
-            print(f"Parabens você conseguiu após {tentativas}")
+            print(f"Parabens você conseguiu após {tentativas} tentativas!")
             break
         elif usuario < pc:
             print("ERROOO! Tente novamente: ")
             print("Dica: É maior que isso")
+            tentativas += 1
         elif usuario > pc:
             print("ERROOO! Tente novamente")
             print("Dica: é menor que isso")
