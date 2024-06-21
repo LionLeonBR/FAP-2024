@@ -1,4 +1,5 @@
-while True:
+dnv = "sim"
+while dnv == "sim":
     print("Celsius para Fahrenheit ou Fahrenheit para Celsius")
     tipo = input("Digite 1 ou 2: ")
     try:
@@ -15,12 +16,13 @@ while True:
         try:
             temp = int(temp)
         except:
-            print("Valor digitado não é um numero, digite um numero")
+            print("Valor digitado não é um numero inteiro, digite um numero inteiro")
             continue
 
         valor = (temp * (9/5)) + 32
         print(f"O valor em {temperatura} para Fahrenheit é: {valor}°F")
-        break
+        dnv = input("Deseja fazer fazer outra conversão? sim ou não: ")
+
 
     elif tipo == 2:
         temperatura = "Fahrenheit"       
@@ -28,11 +30,9 @@ while True:
         try:
             temp = int(temp)
         except:
-            print("Valor digitado não é um numero, digite um numero")
+            print("Valor digitado não é um numero inteiro, digite um numero inteiro")
             continue
         valor = (temp - 32) * (5/9)
-        print(f"O valor em {temperatura} para Fahrenheit é: {valor}°C")
-        break
-
-
-
+        print(f"O valor em {temperatura} para Fahrenheit é: {valor:.1f}°C")
+        dnv = input("Deseja fazer fazer outra conversão? sim ou não: ")
+print("Obrigado! ^^")
