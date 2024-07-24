@@ -39,6 +39,8 @@ while True:
                 break
         # reset caso encontre a mesma matricula
         if resete == 1:
+            # retorna ao zero para não pular para sempre depois da primeira mudança
+            resete = 0
             continue
         novo_aluno["notas"] = []
         while True:
