@@ -10,4 +10,33 @@ quanto de desktop. Compartilhando o mesmo "Source code" em python para qualquer 
 
 ## Problemas com o kivy 10:00
 
+## Layouts 14:00
+    Aqui verei uma introdução aos layouts do kivy
+
+    <MainWidget>:
+    Button:
+        text: "Hello"
+        size: "100dp", "80dp"
+        pos: "100dp","200dp"
+        color: 0, 0, 1, 1
+    Label:
+        text: "Hello2"
+        size: "40dp", "40dp"
+        pos: "200dp","200dp"
+        color: 1, 0, 0, 1
+    Esses layouts não são responsivos ou seja, nao se adapta a pagina
+
+## BoxLayout 23:51
+    Aqui é um dos layouts responsivos
+    Há duas formas, escrever em codigo python ou utilizar o texto kivy.
+
+    Metodo pelo kivy:
+        orientation: "vertical"
+        Button:
+            text: "A"
+        Button:
+            text: "B"
+        Button:
+            text: "B"
+
 
