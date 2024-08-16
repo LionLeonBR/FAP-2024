@@ -1,0 +1,13 @@
+
+# Iniciando o estudos de Kivy
+link do conteudo = "https://www.youtube.com/watch?v=l8Imtec4ReQ&t=80s"
+
+
+## Kivy 0:00 ~ 2:00 Introdução
+
+    Kivy é uma biblioteca do python que nos permite criar jogos e aplicativos tanto mobile
+quanto de desktop. Compartilhando o mesmo "Source code" em python para qualquer plataforma.
+
+## Problemas com o kivy 10:00
+
+
